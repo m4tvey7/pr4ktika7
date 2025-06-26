@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <title>Практика</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="container">
+        <div class= "logo">
+            <img src="img/Shapca.svg" alt="" width="260" height="150" class="logo-img">
+            <img src="img/Shapca2.svg" alt="" width="195" height="118" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">ПРОДУКЦИЯ</a></li>
+                <li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+                <li><a href="#">ГДЕ КУПИТЬ</a></li>
+                <li><a href="#">ПАРТНЕРЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li class="phone-block">
+                    <div class="phone-wrapper">
+                    <div class="cifri"><a href="#">8 951 735-70-87</a></div>
+                    <div class="btn"><a data-fancybox href="#hidden">Заказать звонок</a></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    <div class="modal-okno1" style="display: none; width: 1000px;" id="hidden"> 
+	<h2>заказать звонок</h2>
+    <div class="Name">
+        <input id="name" type="text" name="name" class="form-control" value="" placeholder="Ваше имя" minlength="2" maxlength="30" required="required">
+        <div class="invalid-feedback"></div>
+    </div>
+    <div class="Nomer">
+        <input id="nomer" type="text" name="nomer" class="form-control" value="" placeholder="Номер телефона*" minlength="11" maxlength="11" required="required">
+        <div class="invalid-feedback"></div>
+    </div>
+    <p>*Нажимая на кнопку, Вы соглашаетесь на <span>обработку персональных данных</span></p>
+    <button data-fancybox href="#hidden1" type="button" class="knopca">Отправить</button>
+    </div>
+    
+    <div class="modal-okno2" style="display: none; width: 1000px;" id="hidden1"> 
+	<h2>заявка отправлена</h2>
+    <p>Благодарим за заявку.</p>
+    <p>Перезвоним в течении 15 минут</p>
+    <button type="button" class="knopca1" data-fancybox-close-both>Закрыть</button>
+    </div>
+    <script>
+        $('[data-fancybox-close-both]').on('click', function() {
+        $.fancybox.close();
+        $.fancybox.close();
+        });
+    </script>
+
+    </header>
+</div>
+
+    <div class="hero container">
+        <div class="hero--info">
+            <h1>Минеральная серия</h1>
+            <h2>Косметика для тела, лица и волос.</h2>
+            <p>В основе косметики — уникальная лечебная минеральная вода, богатая природными микроэлементами</p>
+            <button class="btn1">перейти к продукции</button>
+        </div>
+        <img src="img/1foto.svg" alt="" class="img1">
+        <img src="img/2foto.svg" alt="" class="img2">
+        <img src="img/leftStrlka.png" alt="" class="img3">
+        <img src="img/rightStrlka.png" alt="" class="img4">
+        <img src="img/points.png" alt="" class="img5">
+        <img src="img/3foto.svg" alt="" class="img6">
+        <img src="img/fon.svg" alt="" class="fon">
+        <div class="decoration-lines">
+            <div class="full-line"></div>
+            <div class="half-line"></div>
+        </div>
+    </div>
+         <div>
+            <ul class="social-apps">
+                    <li><a href="#"><img src="img/telegram-svgrepo-com (1) 2.svg" alt="Telegram"></a></li>
+                    <li><a href="#"><img src="img/whatsapp-svgrepo-com (1) 1.svg" alt="WhatsApp"></a></li>
+                    <li><a href="#"><img src="img/vk-svgrepo-com 1.svg" alt="VKontakte"></a></li>
+            </ul>    
+        </div>
+    <div class="container opisanie">
+        <div class="decoration-lines1">
+            <div class="full-line1"></div>
+            <div class="full-line2"></div>
+            <div class="vertical-line"></div>
+        </div>
+        <h1>Наши продукты
+            имеют вологодский
+            колорит</h1>
+        <img src="img/logo.png" alt="" class="img1">
+        <h3>Это «своё, родное»</h3>
+        <p>В основе косметики — уникальная лечебная минеральная вода, богатая
+            природными микроэлементами. Секрет не только в особых микроэлементах, но и в 
+            уровне pH, который совпадает с кожей — 5,5. Кислотный баланс воды из-под крана 
+            выше, поэтому она сушит кожу и становится причиной воспалений</p>
+        <p>Состав воды и возможность её использования подтверждены сертификатами 
+            соответствия. У нас сертифицированное ответственное производство, не 
+            «домашний» розлив.</p>
+        <button class="simple-btn">смотреть сертификат<span class="btn-arrow">→</span></button>
+        <img src="img/4foto.svg" alt="" class="img2">
+    </div>
+    <div class="container producti">
+        <div class="shapca"> 
+            <h1>Продукция</h1>
+            <nav>
+            <ul>
+                <li><a href="#">ВСЕ</a></li>
+                <li><a href="#">ДЛЯ ВОЛОС</a></li>
+                <li><a href="#">ДЛЯ ТЕЛА</a></li>
+                <li><a href="#">ДЛЯ ЛИЦА</a></li>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="decoration-lines">
+            <div class="full-line"></div>
+        </div>
+        <div class="blocks">
+            <div class="block11">
+            <div class="block1">
+                <div class="tovar1"><img src="img/block1.svg" alt=""></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1">купить</button>
+                <ul>
+                    <li class="okno1">новинка</li>
+                    <li class="okno2">акция</li>
+                    <li class="okno3">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2">!<span class="tooltip">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block22">
+            <div class="block2">
+                <div class="tovar2"><img src="img/block2.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-2">купить</button>
+                <ul>
+                    <li class="okno1-2">новинка</li>
+                    <li class="okno2-2">акция</li>
+                    <li class="okno3-2">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-2">!<span class="tooltip2">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block33">
+            <div class="block3">
+                <div class="tovar3"><img src="img/block3.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-3">купить</button>
+                <ul>
+                    <li class="okno1-3">новинка</li>
+                    <li class="okno2-3">акция</li>
+                    <li class="okno3-3">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-3">!<span class="tooltip3">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block44">
+            <div class="block4">
+                <div class="tovar4"><img src="img/block4.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-4">купить</button>
+                <ul>
+                    <li class="okno1-4">новинка</li>
+                    <li class="okno2-4">акция</li>
+                    <li class="okno3-4">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-4">!<span class="tooltip4">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block55">
+            <div class="block5">
+                <div class="tovar5"><img src="img/block4.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-5">купить</button>
+                <ul>
+                    <li class="okno1-5">новинка</li>
+                    <li class="okno2-5">акция</li>
+                    <li class="okno3-5">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-5">!<span class="tooltip5">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block66">
+            <div class="block6">
+                <div class="tovar6"><img src="img/block3.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-6">купить</button>
+                <ul>
+                    <li class="okno1-6">новинка</li>
+                    <li class="okno2-6">акция</li>
+                    <li class="okno3-6">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-6">!<span class="tooltip6">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block77">
+            <div class="block7">
+                <div class="tovar7"><img src="img/block1.svg" alt=""></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-7">купить</button>
+                <ul>
+                    <li class="okno1-7">новинка</li>
+                    <li class="okno2-7">акция</li>
+                    <li class="okno3-7">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-7">!<span class="tooltip7">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <div class="block88">
+            <div class="block8">
+                <div class="tovar8"><img src="img/block2.png" alt=""></div>
+                <div class="full-line"></div>
+                <h2>Бальзам для всех типов волос, 400 мл</h2>
+                <h3>350 ₽</h3>
+                <h4>380 ₽</h4>
+                <button class="knopka1-8">купить</button>
+                <ul>
+                    <li class="okno1-8">новинка</li>
+                    <li class="okno2-8">акция</li>
+                    <li class="okno3-8">хит продаж</li>
+                </ul>
+            </div>
+            <button class="knopka2-8">!<span class="tooltip8">Фрахтование бесхозно. Безвозмездное изъятие формирует коносамент, когда речь идет об ответственности юридического лица. Помимо права собственности и иных вещных прав, некоммерческая организация вознаграждает антимонопольный страховой полис. Если в соответствии с законом допускается самозащита права, компенсация наследует акцепт. Поручительство законодательно подтверждает договорный Кодекс</span></button>
+            </div>
+            <button class="btn">показать еще</button>
+        </div>
+    </div>  
+    <div class="container proizvodstvo">
+        <div class="textblock1">
+            <h2>производство</h2>
+            <p>Более 65 лет на базе источника минеральной воды функционирует
+            Вологодская бальнеолечебница, где успешно применяется лечение 
+            водой</p>
+        </div>
+        <div class="textblock2">
+            <h2>5,5 pH</h2>
+            <p>уровень кислотного баланса воды, который приемлем для 
+            жизнедеятельности человека, безопасный для кожи и глаз </p>
+        </div>
+        <div class="textblock3">
+            <h2>в 2023 г.</h2>
+            <p>проведены испытания Испытательным арбитражным центром Главного экспертно-аналитического 
+            центра «СОЭКС» АНО «СОЮЗЭКСПЕРТИЗА» Торгово-промышленной палаты Российской Федерации и 
+            получено согласование на использование данной редкой воды в качестве основы для производства 
+            косметологических средств под маркой «Минеральная серия»</p>
+        </div>
+        <img src="img/foto1.svg" alt="" class="foto1">
+        <img src="img/foto2.svg" alt="" class="foto2">
+        <img src="img/foto3.svg" alt="" class="foto3">
+        <img src="img/leftStrlka.png" alt="" class="leftStrlka">
+        <img src="img/rightStrlka.png" alt="" class="rightStrlka">
+        <img src="img/fon2.svg" alt="" class="fon2">
+    </div>
+    <div class="container dostavka">
+        <div class="text1">
+            <h2>Оплата</h2>
+            <p>Для оформления заказа оставьте заявку на сайте, заполнив форму: имя, 
+                номер телефона. После заявки мы свяжемся с Вами и отправим заказ. 
+                Или можно сделать заказ на маркеплейсах</p>
+            <p>Варианты оплаты на выбор:</p>
+            <ul>
+                <li class="stroka1">Наличными при доставке</li>
+                <li class="stroka2">Банковской картой при получении заказа</li>
+                <li class="stroka3">Переводом по банковской карте</li>
+            </ul>
+        </div>
+        <div class="text2">
+            <h2>Доставка</h2>
+            <p>Доставляем заказы по всей России 5-7дней. По г. Вологда и Вологодской 
+                области 1-2 дня</p>
+            <p>Варианты доставки на выбор:</p>
+            <ul>
+                <li class="stroka1">Почта России — 200 ₽</li>
+                <li class="stroka2">Самовывоз — бесплатно</li>
+                <li class="stroka3">Доставка ТК — 400 ₽</li>
+            </ul>
+        </div>
+        <img src="img/kartinka1.svg" alt="" class="risunok1">
+        <img src="img/kartinka2.svg" alt="" class="risunok2">
+        <img src="img/fon.svg" alt="" class="risunok3">
+        <div class="decoration-lines2">
+            <div class="full-line1"></div>
+            <div class="full-line2"></div>
+        </div>
+        <div class="vertical-liniya"></div>
+    </div>
+
+    <div class="container pokupka">
+        <h2>где купить</h2>
+        <div class="marketpalics">
+            <div class="marketpalic1">
+                <img src="img/wb.svg" alt="">
+                <h3>Wildberries</h3>
+                <button class="simple-btn1">перейти<span class="btn-arrow1">→</span></button>
+            </div>
+            <div class="marketpalic2">
+                <img src="img/ozon.svg" alt="">
+                <h3>Ozon</h3>
+                <button class="simple-btn2">перейти<span class="btn-arrow2">→</span></button>
+            </div>
+            <div class="marketpalic3">
+                <img src="img/yandex.svg" alt="">
+                <h3>Яндекс.Mаркет</h3>
+                <button class="simple-btn3">перейти<span class="btn-arrow3">→</span></button>
+            </div>
+            <div class="mesto1">
+                <h5>Торговый центр «Форум»</h5>
+                <h6>г. Вологда, ул. Ленинградская, д. 100</h6>
+                <p>Мы находимся на 2 этаже</p>
+            </div>
+            <div class="mesto2">
+                <h5>Торговый центр «Форум»</h5>
+                <h6>г. Вологда, ул. Ленинградская, д. 100</h6>
+                <p>Мы находимся на 2 этаже</p>
+            </div>
+            <div class="mesto3">
+                <h5>Торговый центр «Форум»</h5>
+                <h6>г. Вологда, ул. Ленинградская, д. 100</h6>
+                <p>Мы находимся на 2 этаже</p>
+            </div>
+            <div class="mesto4">
+                <h5>Торговый центр «Форум»</h5>
+                <h6>г. Вологда, ул. Ленинградская, д. 100</h6>
+                <p>Мы находимся на 2 этаже</p>
+            </div>
+            <div class="full-line1-1"></div>
+            <div class="full-line1-2"></div>
+            <div class="full-line1-3"></div>
+            <div class="full-line1-4"></div>
+            <div class="vertical-liniya-1"></div>
+            <button class="btn">показать еще</button>
+        </div>
+    </div>    
+    <div class="container end">
+        <div class="partners">
+            <h2>партнёры</h2>
+            <ul>
+                <li class="partner1"><img src="img/partner1.svg" alt=""></li>
+                <li class="partner2"><img src="img/partner2.svg" alt=""></li>
+                <li class="partner3"><img src="img/partner3.svg" alt=""></li>
+                <li class="partner4"><img src="img/partner4.svg" alt=""></li>
+                <li class="partner5"><img src="img/partner5.svg" alt=""></li>
+            </ul>
+            <img src="img/leftStrlka.png" alt="" class="ris1">
+            <img src="img/rightStrlka.png" alt="" class="ris2">
+        </div>
+        <div class="svaz">
+            <h2>Свяжитесь с нами</h2>
+            <div class="info1">
+                <h4>Номер телефона</h4>
+                <h5>8 951 735-70-87</h5>
+                <h6>Пн - Пт: с 09:00 до 19:00</h6>
+                <p>ООО «Сила Вологодских недр»</p>
+                <p>ОГРНИП 000000000000000</p>
+                <p>ИНН 000000000000</p>
+            </div>
+            <div class="info2">
+                <h4>Электронная почта</h4>
+                <h5>minser-market@mail.ru</h5>
+                <h6>Пишите нам в мессенджерах</h6>
+                <div>
+                     <ul class="social-apps-1">
+                        <li><a href="#"><img src="img/telegram-svgrepo-com (1) 2.svg" alt="Telegram"></a></li>
+                        <li><a href="#"><img src="img/whatsapp-svgrepo-com (1) 1.svg" alt="WhatsApp"></a></li>
+                        <li><a href="#"><img src="img/vk-svgrepo-com 1.svg" alt="VKontakte"></a></li>
+                     </ul>    
+                </div>
+            </div>
+            <img src="img/endfoto.svg" alt="" class="endfoto">
+            <div class="dop-info">
+                <ul>
+                    <li class="oneinfo">Политика конфиденциальности</li>
+                    <li class="twoinfo">Сайт разработан </li>
+                    <li class="threeinfo">GRAMPUS</li>
+                    <li class="fourinfo">© 2024. Компания ООО «Сила Вологодских недр»</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <img src="img/fon2.svg" alt=""class="endfon">
+    </div>
+</div>        
+    
+</body>
+
+</html>

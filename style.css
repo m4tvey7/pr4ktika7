@@ -1,0 +1,2966 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Onest:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    color:rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    width: 2600px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 150px; 
+}
+
+.logo-img {
+    display: block;
+}
+
+header nav{
+    float: right;
+    width: 55%;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-block {
+    position: relative;
+    margin-left: 20px;
+}
+
+.phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cifri a {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(24, 33, 46, 1);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn a {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(24, 33, 46, 1);
+    text-decoration: none;
+    border-bottom: 2px solid rgba(24, 33, 46, 1);
+    padding-bottom: 2px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: rgba(70, 77, 88, 1);
+}
+
+
+header nav ul li:not(.phone-block) a:hover {
+    border-bottom: 3px solid #fbdfb7;
+}
+
+div.hero{
+    padding-bottom: 100px;
+    position: relative;
+}
+div.hero--info{
+    width: 850px;
+    padding-top: 70px;
+}
+
+div.hero--info h1 {
+    width: 50;
+    height: 172;
+    color: rgba(96, 150, 222, 1);
+    font-family: "Marck Script", cursive;
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+div.hero--info h2{
+    padding-top: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+div.hero--info p{
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 80px;
+}
+
+div button.btn1{
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 30px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+div button.btn1:hover{
+    cursor: pointer;
+    background-color: #a2caff;
+}
+
+div.hero .img1{
+    position: absolute;
+    top: 150px;
+    right: 700px; 
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+div.hero .img2{
+    position: absolute;
+    top: 225px;
+    right: 10px; 
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+div.hero .img3{
+    position: absolute;
+    top: 1000px;
+    right: 565px; 
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+div.hero .img4{
+    position: absolute;
+    top: 1000px;
+    right: 485px; 
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+div.hero .img5{
+    position: absolute;
+    top: 1100px;
+    right: 185px; 
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+div.hero .img6{
+    position: absolute;
+    top: 1100px;
+    right: 1900px; 
+    transform: scale(1.3);
+}
+
+.fon{
+    position: absolute;
+    top: 750px;
+    right: 10px; 
+    transform: scale(1.3);
+    z-index: 0;
+}
+
+div.social-apps{
+    width: 20%;
+
+}
+.social-apps {
+    list-style: none;
+    transform: scale(1.5);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    top: 650px;
+    right: 90px;
+    z-index: 20;
+}
+.social-apps a{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(96, 150, 222, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+}
+
+.social-apps li:hover a{
+    cursor: pointer;
+    background-color: #a2caff;
+}
+
+.decoration-lines {
+    position: relative;
+    width: 100%;
+}
+
+.full-line {
+    position: absolute;
+    bottom: 865px;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+}
+
+.half-line {
+    position: absolute;
+    top: 255px;
+    width: 44.8%;
+    height: 1px;
+    background: #fbdfb7;
+}
+
+div.opisanie{
+    padding-bottom: 100px;
+    position: relative;
+}
+
+div.opisanie h1{
+    position: absolute;
+    width: 800px;
+    height: 172px;
+    top: 550px;
+    font-family: "Onest";
+    font-weight: 400;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.opisanie .img1{
+    position: absolute;
+    top: 900px;
+    right: 2425px;
+    transform: scale(1.5);
+}
+
+div.opisanie h3{
+    position: absolute;
+    top: 550px;
+    font-family: "Marck Script", cursive;
+    font-weight: 400px;
+    font-size: 50px;
+    right: 1050px;
+    color: rgba(96, 150, 222, 1);
+}
+
+div.opisanie p{
+    position: relative;
+    font-family: "Ubuntu";
+    font-weight: 400px;
+    width: 1005px;
+    height: 120px;
+    top: 650px;
+    left: 1150px;
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 50px;
+    display: block;
+    line-height: 1.5;
+}
+
+.opisanie .img2{
+    position: absolute;
+    top: 650px;
+    right: 1px;
+    transform: scale(1.3);
+}
+    
+ .simple-btn {
+    position: absolute;
+    right: 1025px;
+    top: 1000px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 0;
+    color: rgba(24, 33, 46, 1);
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    font-family: 'Onest';
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn-arrow {
+    transition: all 0.3s ease;
+}
+
+.simple-btn:hover {
+    color: #a2caff;
+}
+
+.simple-btn:hover .btn-arrow {
+    transform: translateX(10px);
+    color: #a2caff;
+}
+
+.decoration-lines1 {
+    position: relative;
+    width: 100%;
+}
+
+.full-line1 {
+    position: absolute;
+    top: 305px;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+}
+
+.full-line2 {
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+}
+
+
+.vertical-line {
+    position: absolute;
+    top: 305px;
+    left: 900px;
+    height: 895px;
+    width: 1px;
+    background: #fbdfb7;
+}
+
+.producti{
+ position: relative;
+ padding-bottom: 100px;
+}
+
+.shapca h1{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    width: 560;
+    height: 78;
+    top: 900px;
+}
+
+.shapca nav{
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    position: absolute;
+    top: 950px;
+    right: 275px;
+    width: 45%;
+    text-transform: uppercase;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.shapca nav ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.shapca nav ul li{
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 30px 45px;
+    border: 2px solid #fbdfb7;
+    transition: all 500ms ease;
+}
+
+.shapca nav ul li a {
+    color: rgba(70, 77, 88, 1);
+    transition: all 500ms ease;
+}
+
+.shapca nav ul li:hover {
+   background: rgba(193, 149, 112, 1);
+}
+
+.shapca nav ul li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.producti .decoration-lines {
+    position: relative;
+    width: 100%;
+}
+
+.producti .full-line {
+    position: absolute;
+    top: 2850px;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+}
+
+.producti .btn{
+    position: absolute;
+    top: 2700px;
+    right: 45%;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 25px;
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 30px 40px;
+    border: 2px solid rgba(96, 150, 222, 1);
+    color: rgba(96, 150, 222, 1);
+    text-transform: uppercase;
+    transition: all 500ms ease;
+}
+
+
+.producti .btn:hover{
+    cursor: pointer;
+    background-color: rgba(96, 150, 222, 1);
+    color: rgb(255, 255, 255);
+}
+
+.producti .blocks{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 115px;
+    justify-content: center;
+}
+
+
+.producti .block1{
+    position: relative;
+    top: 1100px;
+    border: 2px solid #fbdfb7;
+    width: 900px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+.block1 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 50px;
+    width: 400px;
+    right: 50px;
+    top: 100px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block1 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 450px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block1 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    right: 165px;
+    top: 470px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 125px;
+    border: 0;
+    right: 75px;
+    top: 525px;
+    transition: all 500ms ease;
+}
+
+button.knopka2{
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1725px;
+    z-index: 10;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+
+.tooltip {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.block1 .tovar1{
+    position: relative;
+    border: 0px;
+    width: 450px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.block1 img {
+    position: absolute;
+    width: 450px;
+    height: 800px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+
+.block1 ul {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+/* анимация для блока */
+.knopka2:hover{
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+
+.producti .block1:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block1:hover .knopka1 {
+    background-color: #a2caff; 
+}
+
+.producti .block1:hover img {
+    transform: scale(1.1);
+}
+
+.producti .block1:hover {
+    border: 2px solid #a2caff;
+    transition: all 500ms ease;
+}
+/* конец первого блока */
+
+.producti .block2{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 500ms ease;
+}
+
+.block2 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block2 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block2 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-2 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-2 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 10;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip2 {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 10;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-2:hover .tooltip2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.block2 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-2{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-2{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-2{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block2 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block2 .tovar2{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block2 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+
+.producti .block2:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block2:hover .knopka1-2 {
+    background-color: #a2caff; 
+}
+
+.knopka2-2:hover{
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block2:hover img {
+    transform: scale(1.1);
+}
+
+/* конец второго блока */
+
+.producti .block3{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 9;
+    transition: all 500ms ease;
+}
+
+
+.block3 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block3 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block3 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-3 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-3 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 9;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip3 {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-3:hover .tooltip3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.block3 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-3{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-3{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-3{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block3 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block3 .tovar3{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block3 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.producti .block3:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block3:hover .knopka1-3 {
+    background-color: #a2caff; 
+}
+
+.knopka2-3:hover {
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block3:hover img {
+    transform: scale(1.1);
+}
+
+
+/* конец третьего блока */
+
+.producti .block4{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 8;
+    transition: all 500ms ease;
+}
+
+
+.block4 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block4 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block4 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-4 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-4 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 8;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip4 {
+    position: absolute;
+    left: -125px;
+    visibility: hidden;
+    width: 710px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-4:hover .tooltip4 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.block4 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-4{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-4{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-4{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block4 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block4 .tovar4{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block4 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.producti .block4:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block4:hover .knopka1-4 {
+    background-color: #a2caff; 
+}
+
+.knopka2-4:hover {
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block4:hover img {
+    transform: scale(1.1);
+}
+
+/* конец четвертого блока */
+
+.producti .block5{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 9;
+    transition: all 500ms ease;
+}
+
+
+.block5 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block5 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block5 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-5 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-5 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 9;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip5 {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-5:hover .tooltip5{
+  visibility: visible;
+  opacity: 1;
+}
+
+.block5 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-5{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-5{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-5{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block5 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block5 .tovar5{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block5 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.producti .block5:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block5:hover .knopka1-5 {
+    background-color: #a2caff; 
+}
+
+.knopka2-5:hover {
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block5:hover img {
+    transform: scale(1.1);
+}
+
+/* конец пятого блока */
+
+.producti .block6{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+
+.block6 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block6 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block6 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-6 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-6 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 2;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip6 {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-6:hover .tooltip6 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.block6 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-6{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-6{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-6{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block6 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block6 .tovar6{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block6 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.producti .block6:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block6:hover .knopka1-6 {
+    background-color: #a2caff; 
+}
+
+ .knopka2-6:hover{
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block6:hover img {
+    transform: scale(1.1);
+}
+
+/* конец шестого блока */
+
+.producti .block7{
+    position: relative;
+    top: 1100px;
+    border: 2px solid #fbdfb7;
+    width: 900px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.block7 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 50px;
+    width: 400px;
+    right: 50px;
+    top: 100px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block7 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 450px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block7 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    right: 165px;
+    top: 470px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-7{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 125px;
+    border: 0;
+    right: 75px;
+    top: 525px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-7{
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1725px;
+    z-index: 1;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip7 {
+    position: absolute;
+    left: 5px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-7:hover .tooltip7 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.block7 .tovar7{
+    position: relative;
+    border: 0px;
+    width: 450px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.block7 img {
+    position: absolute;
+    width: 450px;
+    height: 800px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+
+.block7 ul {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-7{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-7{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-7{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.producti .block7:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block7:hover .knopka1-7 {
+    background-color: #a2caff; 
+}
+
+ .knopka2-7:hover {
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block7:hover img {
+    transform: scale(1.1);
+}
+
+.producti .block7:hover {
+    border: 2px solid #a2caff;
+    transition: all 500ms ease;
+}
+
+/* конец седьмого блока */
+
+.producti .block8{
+    position: relative;
+    top: 1100px;
+    border: 0;
+    width: 450px;
+    height: 705px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+
+.block8 h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 600;
+    font-size: 30px;
+    width: 400px;
+    top: 480px;
+    left: 25px;
+    text-align: center;
+    color: rgba(24, 33, 46, 1);
+    transition: all 500ms ease;
+}
+
+.block8 h3{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 55px;
+    right: 250px;
+    top: 625px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.block8 h4{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    left: 45px;
+    top: 600px;
+    text-decoration: line-through;
+    color: rgba(70, 77, 88, 1);
+}
+
+button.knopka1-8 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border: 0;
+    right: 10px;
+    top: 610px;
+    transition: all 500ms ease;
+}
+
+button.knopka2-8 {
+    position: absolute;
+    font-size: 35px;
+    background: rgba(193, 149, 112, 1);
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;  
+    height: 60px; 
+    padding: 0px 0px;
+    border: 0;
+    left: 10px;
+    top: 1480px;
+    z-index: 1;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.tooltip8 {
+    position: absolute;
+    left: -300px;
+    visibility: hidden;
+    width: 725px;
+    backdrop-filter: blur(100px);
+    color: rgba(70, 77, 88, 1);
+    border: 3px solid rgba(221, 197, 177, 1);
+    padding: 10px;
+    top: 100%;
+    margin-top: 8px; 
+    text-align: left;
+    z-index: 2;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.knopka2-8:hover .tooltip8 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.block8 ul {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 1;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.okno1-8{
+    background: rgba(166, 94, 222, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno2-8{
+    background: rgba(222, 102, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.okno3-8{
+    background: rgba(222, 166, 94, 1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.block8 .full-line{
+    position: absolute;
+    top: 575px;
+    border: #fbdfb7;
+    width: 100%;
+    height: 1px;
+}
+
+.block8 .tovar8{
+    position: relative;
+    width: 450px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.block8 img {
+    position: absolute;
+    width: 450px;
+    height: 465px;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.producti .block8:hover h2 {
+    color: #a2caff;
+}
+
+.producti .block8:hover .knopka1-8 {
+    background-color: #a2caff; 
+}
+
+.knopka2-8:hover {
+    background-color: rgba(96, 150, 222, 1); 
+}
+
+.producti .block8:hover img {
+    transform: scale(1.1);
+}
+
+/* конец восьмого блока */
+
+.proizvodstvo{
+    position: relative;
+    top: 1300px;
+}
+
+.textblock1{
+    position: absolute;
+    width: 900px;
+}
+
+.textblock1 h2{
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.textblock1 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+    color: rgba(70, 77, 88, 1);
+}
+
+.textblock2{
+    position: absolute;
+    width: 900px;
+    top: 900px;
+    z-index: 1;
+}
+
+.textblock2 h2{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba(193, 149, 112, 1);
+    z-index: 1;
+}
+
+.textblock2 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+    color: rgba(70, 77, 88, 1);
+    z-index: 1;
+}
+
+
+.textblock3{
+    position: absolute;
+    width: 1300px;
+    top: 900px;
+    right: 1px;
+    z-index: 1;
+}
+
+.textblock3 h2{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgba(193, 149, 112, 1);
+    z-index: 1;
+}
+
+.textblock3 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.5;
+    color: rgba(70, 77, 88, 1);
+    z-index: 1;
+}
+
+.proizvodstvo .foto3{
+    position: absolute;
+    top: 150px;
+    right: 280px;
+    transform: scale(1.6);
+    z-index: 1;
+}
+
+.proizvodstvo .foto2{
+    position: absolute;
+    top: 580px;
+    right: 1750px;
+    transform: scale(1.6);
+    z-index: 1;
+}
+
+.proizvodstvo .foto1{
+    position: absolute;
+    top: 580px;
+    right: 2250px;
+    transform: scale(1.6);
+    z-index: 1;
+}
+
+.proizvodstvo .leftStrlka{
+    position: absolute;
+    top: 732px;
+    right: 1500px;
+    transform: scale(1.5);
+    z-index: 1;
+}
+.proizvodstvo .rightStrlka{
+    position: absolute;
+    top: 732px;
+    right: 1422px;
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.proizvodstvo .fon2{
+    position: absolute;
+    width: 100%;
+    top: 450px;
+}
+
+.dostavka{
+    position: relative;
+    top: 1305px;
+}
+
+.text1{
+    position: absolute;
+    top: 1350px;
+    width: 900px;
+}
+
+.text1 h2{
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+}
+
+.text1 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.text1 ul{
+    position: absolute;
+    left: 30px;
+}
+
+.text1 ul li{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.text1 ul li::marker{
+    color: rgba(193, 149, 112, 1);
+    font-size: 30px;
+}
+
+.text2{
+    position: absolute;
+    top: 1350px;
+    left: 1100px;
+    width: 1000px;
+}
+
+.text2 h2{
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+}
+
+.text2 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.text2 ul{
+    position: absolute;
+    left: 30px;
+}
+
+.text2 ul li{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.text2 ul li::marker{
+    color: rgba(193, 149, 112, 1);
+    font-size: 30px;
+}
+
+.risunok1{
+    position: absolute;
+    right: 75px;
+    top: 1500px;
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.risunok2{
+    position: absolute;
+    top: 2000px;
+    left: 125px;
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.risunok3{
+    position: absolute;
+    top: 2100px;
+    right: 275px;
+    transform: scale(2.4);
+}
+
+.decoration-lines2 .full-line1{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 1250px;
+    z-index: 1;
+}
+
+.decoration-lines2 .full-line2{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 2600px;
+    z-index: 1;
+}
+
+.vertical-liniya{
+    position: absolute;
+    left: 1000px;
+    width: 1px;
+    height: 1350px;
+    background: #fbdfb7;
+    top: 1250px;
+    z-index: 0;
+}
+
+.pokupka {
+    position: relative;
+    top: 3000px;
+}
+
+.pokupka img {
+    transform: scale(1.5);
+}
+
+.pokupka h2{
+    position: absolute;
+    top: 1000px;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+}
+
+.marketpalic1{
+    position: absolute;
+    top: 1200px;
+}
+
+.marketpalic1 h3{
+    position: absolute;
+    bottom: 65px;
+    left: 165px;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 44px;
+    color: rgba(24, 33, 46, 1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+   
+ .simple-btn1 {
+    position: absolute;
+    left: 145px;
+    top: 50px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 0;
+    color: rgba(96, 150, 222, 1);
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    font-family: 'Onest';
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn-arrow1 {
+    transition: all 0.3s ease;
+}
+
+.marketpalic1:hover h3 {
+    color: rgba(96, 150, 222, 1);
+}
+
+.marketpalic1:hover .simple-btn1 {
+    color: rgba(170, 196, 231, 1);
+}
+
+.marketpalic1:hover .simple-btn1 .btn-arrow1 {
+    transform: translateX(25px);
+    color: rgba(170, 196, 231, 1);
+}
+
+.marketpalic2{
+    position: absolute;
+    top: 1200px;
+    left: 600px;
+}
+
+.marketpalic2 h3{
+    position: absolute;
+    bottom: 65px;
+    left: 165px;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 44px;
+    color: rgba(24, 33, 46, 1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+   
+ .simple-btn2 {
+    position: absolute;
+    left: 145px;
+    top: 50px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 0;
+    color: rgba(96, 150, 222, 1);
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    font-family: 'Onest';
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn-arrow2 {
+    transition: all 0.3s ease;
+}
+
+.marketpalic2:hover h3 {
+    color: rgba(96, 150, 222, 1);
+}
+
+.marketpalic2:hover .simple-btn2 {
+    color: rgba(170, 196, 231, 1);
+}
+
+.marketpalic2:hover .simple-btn2 .btn-arrow2 {
+    transform: translateX(25px);
+    color: rgba(170, 196, 231, 1);
+}
+
+
+
+.marketpalic3{
+    position: absolute;
+    top: 1200px;
+    left: 1200px;
+}
+
+.marketpalic3 h3{
+    position: absolute;
+    bottom: 65px;
+    left: 165px;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 44px;
+    color: rgba(24, 33, 46, 1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+   
+ .simple-btn3 {
+    position: absolute;
+    left: 145px;
+    top: 50px;
+    padding: 12px 20px;
+    background: transparent;
+    border: 0;
+    color: rgba(96, 150, 222, 1);
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    font-family: 'Onest';
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn-arrow3 {
+    transition: all 0.3s ease;
+}
+
+.marketpalic3:hover h3 {
+    color: rgba(96, 150, 222, 1);
+}
+
+.marketpalic3:hover .simple-btn3 {
+    color: rgba(170, 196, 231, 1);
+}
+
+.marketpalic3:hover .simple-btn3 .btn-arrow3 {
+    transform: translateX(25px);
+    color: rgba(170, 196, 231, 1);
+}
+
+.mesto1{
+    position: absolute;
+    top: 1450px;
+}
+
+.mesto1 h5{
+    font-family: 'Onest';
+    font-weight: 500;
+    width: 400px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+}
+
+.mesto1 h6{
+    position: absolute;
+    left: 500px;
+    bottom: 60px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 44px;
+    width: 750px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.mesto1 p{
+    position: absolute;
+    left: 500px;
+    bottom: 10px;
+    width: 500px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.mesto2{
+    position: absolute;
+    top: 1450px;
+    left: 1325px;
+}
+
+.mesto2 h5{
+    font-family: 'Onest';
+    font-weight: 500;
+    width: 400px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+}
+
+.mesto2 h6{
+    position: absolute;
+    left: 500px;
+    bottom: 60px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 44px;
+    width: 750px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.mesto2 p{
+    position: absolute;
+    left: 500px;
+    bottom: 10px;
+    width: 500px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+}
+
+
+.mesto3{
+    position: absolute;
+    top: 1750px;
+}
+
+.mesto3 h5{
+    font-family: 'Onest';
+    font-weight: 500;
+    width: 400px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+}
+
+.mesto3 h6{
+    position: absolute;
+    left: 500px;
+    bottom: 60px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 44px;
+    width: 750px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.mesto3 p{
+    position: absolute;
+    left: 500px;
+    bottom: 10px;
+    width: 500px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+}
+
+
+.mesto4{
+    position: absolute;
+    top: 1750px;
+    left: 1325px;
+}
+
+.mesto4 h5{
+    font-family: 'Onest';
+    font-weight: 500;
+    width: 400px;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+}
+
+.mesto4 h6{
+    position: absolute;
+    left: 500px;
+    bottom: 60px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 44px;
+    width: 750px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.mesto4 p{
+    position: absolute;
+    left: 500px;
+    bottom: 10px;
+    width: 500px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(70, 77, 88, 1);
+}
+
+.full-line1-1{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 1375px;
+    z-index: 1;
+}
+
+.full-line1-2{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 1650px;
+    z-index: 1;
+}
+
+.full-line1-3{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 1925px;
+    z-index: 1;
+}
+
+.full-line1-4{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #fbdfb7;
+    top: 2200px;
+    z-index: 1;
+}
+
+.vertical-liniya-1{
+    position: absolute;
+    left: 1285px;
+    width: 1px;
+    height: 550px;
+    background: #fbdfb7;
+    top: 1375px;
+    z-index: 0;
+}
+
+.pokupka .btn{
+    position: absolute;
+    top: 2000px;
+    right: 45%;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 25px;
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 30px 40px;
+    border: 2px solid rgba(96, 150, 222, 1);
+    color: rgba(96, 150, 222, 1);
+    text-transform: uppercase;
+    transition: all 500ms ease;
+}
+
+
+.pokupka .btn:hover{
+    cursor: pointer;
+    background-color: rgba(96, 150, 222, 1);
+    color: rgb(255, 255, 255);
+}
+
+.end {
+    position: relative;
+    top: 4100px;
+}
+
+.partners h2{
+    position: absolute;
+    top: 1250px;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+}
+
+.partners img {
+    transform: scale(1.5);
+}
+
+.partners ul{
+    position: absolute;
+    left: 600px;
+    top: 1300px;
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.ris1{
+    position: absolute;
+    top: 1485px;
+    left: 15px;
+}
+.ris2{
+    position: absolute;
+    top: 1485px;
+    left: 102px;
+}
+
+.svaz{
+    position: relative;
+    top: 1800px;
+}
+
+.svaz h2{
+    position: absolute;
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+
+.info1 {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+.info1 h4 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(70, 77, 88, 1);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.info1 h5 {
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 60px;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.info1 h6{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(70, 77, 88, 1);
+    margin-bottom: 125px;
+    z-index: 1;
+}
+
+.info1 p{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(70, 77, 88, 1);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.info2 {
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    z-index: 1;
+}
+
+.info2 h4 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(70, 77, 88, 1);
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.info2 h5 {
+    font-family: 'Onest';
+    font-weight: 500;
+    font-size: 35px;
+    color: rgba(24, 33, 46, 1);
+    margin-bottom: 210px;
+    z-index: 1;
+}
+
+.info2 h6{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(70, 77, 88, 1);
+    z-index: 1;
+}
+
+.social-apps-1 {
+    list-style: none;
+    transform: scale(1.5);
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    top: 380px;
+    left: 50px;
+    z-index: 2;
+}
+.social-apps-1 a{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(96, 150, 222, 1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease;
+    z-index: 2;
+}
+
+.social-apps-1 li:hover a{
+    cursor: pointer;
+    background-color: #a2caff;
+}
+
+.endfoto {
+    position: absolute;
+    transform: scale(1.6);
+    right: 280px;
+    top: 180px;
+    z-index: 1;
+}
+
+.endfon{
+    position: absolute;
+    transform: scaleY(1.15);
+    width: 2600px;
+    top: 1680px;
+}
+
+.dop-info{
+    position: absolute;
+    top: 1000px;
+}
+
+.dop-info ul{
+    list-style: none;
+    display: flex;
+}
+
+.oneinfo{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: rgba(70, 77, 88, 1);
+    margin-right: 625px;
+}
+
+.twoinfo{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px; 
+    text-align: center;
+    color: rgba(70, 77, 88, 1);
+    margin-right: 10px;
+}
+
+.threeinfo{
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    margin-right: 625px;
+}
+
+.fourinfo{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 25px; 
+    text-align: center;
+    color: rgba(70, 77, 88, 1);
+}
+
+/* Основные стили модального окна */
+.modal-okno1 {
+    position: absolute;
+    bottom: 250px;
+    padding: 30px;
+    margin: 0 auto;
+    height: 550px;
+    width: 600px;
+    text-align: center;
+}
+
+.modal-okno1 h2{
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.modal-okno1 input {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    width: 900px;
+    height: 65px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(170, 196, 231, 1);
+    border-radius: 30px;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.modal-okno1 p {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    width: 425px;
+    color: rgba(70, 77, 88, 1);
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.modal-okno1 p span{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: rgba(96, 150, 222, 1);
+}
+
+.modal-okno1 button.knopca{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 20px 45px;
+    border: 0;
+    transition: all 500ms ease;
+    left: 700px;
+    top: 365px;
+}
+
+.modal-okno1 button.knopca:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #a2caff;
+}
+
+.modal-okno2 {
+    position: absolute;
+    padding: 30px;
+    margin: 0 auto;
+    height: 400px;
+    text-align: center;
+    top: 250px;
+}
+
+.modal-okno2 h2{
+    font-family: 'Onest';
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: rgba(24, 33, 46, 1);
+}
+
+.modal-okno2 p {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: rgba(70, 77, 88, 1);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.modal-okno2 button.knopca1{
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    background: rgba(96, 150, 222, 1);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 20px 45px;
+    border: 0;
+    transition: all 500ms ease;
+    left: 700px;
+    top: 300px;
+}
+
+.modal-okno2 button.knopca1:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #a2caff;
+}
+
+.block11{
+    position: relative;
+}
+.block22{
+    position: relative;
+}
+.block33{
+    position: relative;
+}
+.block44{
+    position: relative;
+}
+.block55{
+    position: relative;
+}
+.block66{
+    position: relative;
+}
+.block77{
+    position: relative;
+}
+.block88{
+    position: relative;
+}
+
